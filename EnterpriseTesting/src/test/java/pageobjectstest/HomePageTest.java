@@ -61,6 +61,15 @@ public class HomePageTest extends BrowserDriverReal {
     public void helpButtonTest(){
         homePage.helpButton();
     }
+    @Test
+    public void signUpCredentailsTest(){
+        homePage.signUpCredentails();
+    }
+    @Test
+    public void emailClickTest(){
+        homePage.emailClick();
+    }
+
 
 
 

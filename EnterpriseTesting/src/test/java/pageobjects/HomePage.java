@@ -33,6 +33,12 @@ public class HomePage {
         WebElement BrowserSelection;
         @FindBy(how = How.XPATH,using="//div[@class='help']")
         WebElement Help;
+        @FindBy(how=How.ID,using = "signInJoinButton")
+        WebElement signIn;
+        @FindBy(how = How.XPATH,using = "//*[@id=\"utility-eplus-email\"]")
+       WebElement emailCredentions;
+        @FindBy(how = How.ID,using = "utility-eplus-password")
+       WebElement password;
 
 
 
@@ -68,6 +74,15 @@ public class HomePage {
         }
         public void helpButton(){
         Help.click();
+        }
+        public void signUpCredentails(){
+        signIn.click();
+
+        }
+        public void emailClick(){
+            signIn.click();
+        emailCredentions.sendKeys("ahadsheraz96");
+        password.sendKeys("1234567895214");
         }
 
 

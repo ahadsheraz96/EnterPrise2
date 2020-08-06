@@ -1,0 +1,5 @@
+/.idea
+/**/target
+/**/reports;;ExtentReport.html
+/**/screenshots
+/**/debug.log
